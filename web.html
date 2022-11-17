@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>Rede</title>
+</head>
+<body>
+    <header>
+
+
+        <div class="menu">
+            <ul><b>
+                <li><a href="#http">HTTP</a></li>
+                <li><a href="#https">HTTPS</a></li>
+                <li><a href="#ftp">FTP</a></li>
+                <li><a href="#dns">DNS</a></li>
+                <li><a href="#dhcp">DHCP</a></li>
+                <li><a href="#ssh">SSH</a></li>
+                <li><a href="#telnet">TELNET</a></li>
+            </b>
+            </ul>
+        </div>
+    </header>
+    <div class="texto">
+        <div id="http">
+            <h1>HTTP</h1>
+            <p>
+                HTTP é um protocolo de transferência que possibilita que as pessoas que inserem a URL do seu site na Web possam ver os conteúdos 
+                e dados que nele existem. A sigla vem do inglês Hypertext Transfer Protocol.
+            </p>
+            <br>
+            <h2>O que é HTTP?</h2>
+            <br>
+            <p>
+                HTTP é um protocolo de transferência que possibilita que as pessoas que inserem a URL do seu site na Web possam ver os conteúdos e 
+                dados que nele existem. A sigla vem do inglês Hypertext Transfer Protocol.
+            <br>
+            <br>
+                Esse sistema é a base da comunicação que existe em toda a Internet em que os sites e conteúdos que tragam hiperlinks 
+                possam ser encontrados mais facilmente pelo público por meio de um clique do mouse ou um toque na tela.
+            <br>
+            <br>
+                Qualquer servidor que você escolha para hospedar o site da sua empresa tem um programa projetado para receber solicitações HTTP. 
+                Portanto, o navegador que você usa é um cliente HTTP que envia solicitações constantemente ao seu servidor.
+            <br>
+            <br>
+                Assim, quando um usuário acessa ou digita a URL do seu site, o navegador cria uma solicitação HTTP na web e a envia ao endereço de IP 
+                indicado pela URL. Dessa forma, o servidor recebe essa solicitação e envia os arquivos associados que, nada mais são, do que os sites 
+                que acessamos na Internet.
+            <br>
+            <br>
+            </p>
+            <h2>Qual a origem do HTTP?</h2>
+            <br>
+            <p>
+                O termo HTTP foi cunhado por Ted Nelson em 1965 no Projeto Xanadu, que por sua vez foi inspirado numa visão dos anos 
+                30 tida por Vannevar Bush referente ao sistema “memex” de recuperação e gestão de informação baseado em microfilmes 
+                descrito em seu ensaio de 1945 “As We May Think“.
+            <br>
+            <br>
+                Tim Berners-Lee e sua equipe foram os responsáveis ​​por inventar o HTTP original, juntamente com o HTML e a tecnologia associada 
+                para um servidor da Web e um navegador da Web baseado em texto.
+            <br>
+            <br>
+                Berners-Lee propôs pela primeira vez o projeto “WorldWideWeb” em 1989 – hoje conhecido como World Wide Web. 
+                A primeira versão do protocolo tinha apenas um método, chamado GET, que solicitava uma página de um servidor e tinha como 
+                resposta a página HTML.
+            <br>
+            <br>
+                A primeira versão documentada do HTTP foi liderada por Dave Raggett em 1995 e sua finalidade era expandir 
+                o protocolo com operações estendidas, negociação estendida, informação mais rica, vinculada a um protocolo 
+                de segurança que se tornou mais eficiente adicionando métodos e campos de cabeçalho adicionais.
+            <br>
+            <br>
+                O HTTP foi rapidamente adotado pelos principais desenvolvedores de navegadores no início de 1996. 
+                O padrão HTTP / 1.1, como definido no RFC 2068, foi oficialmente lançado em janeiro de 1997, enquanto 
+                melhorias e atualizações do padrão HTTP / 1.1 vieram em junho de 1999.
+            <br>
+            <br>
+                Por fim, em 2007, o HTTPbis Working Group foi formado, em parte, para revisar e esclarecer a especificação 
+                HTTP / 1.1. Em junho de 2014, o WG divulgou uma especificação atualizada de seis partes da obsoleta RFC 2616.
+            <br>
+            <br>
+            </p>
+            <h2>Como é o funcionamento do HTTP?</h2>
+            <br>
+            <p>
+                HTTP é um protocolo baseado em texto sem conexão. Isso significa que as pessoas que acessam o site da sua empresa enviam 
+                solicitações a servidores que as exibem na forma do seu site em formato de texto, imagens, e outros tipos de mídia. 
+                Depois que a solicitação é atendida por um servidor, a conexão entre o usuário e o servidor é desconectada.
+            <br>
+            <br>
+                Uma nova conexão deve ser feita para cada solicitação, isto é, cada vez que alguém acessa o seu site. 
+                Em suma, quando alguém digita a URL do seu site em um navegador, é isto que acontece:
+            <br>
+            <br>
+            <div class="lisinha">
+            <ol>
+                <li>
+                    se a URL pertencer a um domínio próprio, o navegador primeiro se conecta a um servidor e recuperará 
+                    o endereço IP correspondente ao servidor;
+                </li>
+                <br>
+                <li>
+                    o navegador se conecta ao servidor e envia uma solicitação HTTP para a página da web 
+                    desejada (que, neste exemplo, é o seu site);
+                </li>
+                <br>
+                <li>
+                    o servidor recebe a solicitação e verifica a página desejada. Se a página existir, 
+                    o servidor a mostrará. Se o servidor não conseguir encontrar a página solicitada, 
+                    ele enviará uma mensagem de erro HTTP 404, ou seja, página não encontrada;
+                </li>
+                <br>
+                <li>
+                    o navegador, então, recebe a página de volta e a conexão é fechada;
+                </li>
+                <br>
+                <li>
+                    caso a página exista (e é isso que se espera), o navegador a analisa e 
+                    procura outros elementos necessários para concluir a sua exibição, o que inclui seus textos, imagens e afins;
+                </li>
+                <br>
+                <li>
+                    para cada um desses elementos, o navegador faz conexões adicionais e solicitações 
+                    HTTP para o servidor para cada elemento;
+                </li>
+                <br>
+                <li>
+                    quando o navegador terminar de carregar todos os elementos, a página será carregada na janela do navegador.
+                </li>
+                <br>
+            </ol>
+            </div>
+            </p>
+            
+        </div>
+
+
+    <div id="https">
+        <h1>HTTPS</h1>
+        <br>
+        <p>
+            Você já deve ter reparado que, ao acessar algum site, antes do “www” na barra de endereços do seu 
+            navegador, existe a inicial HTTP ou HTTPS. E deve ter reparado também que, em alguns sites, aparece 
+            na barra um cadeado, enquanto que em outros sites, ele não aparece.
+            <br>
+            <br>
+            Mas o que significa isso? E qual é a diferença entre um site que se inicia com HTTP e um que começa com HTTPS?
+            <br>
+            <br>
+            Continue lendo o artigo para entender porque é importante conhecer essas especificações, 
+            e saber como isso pode influenciar na navegação do usuário, nas técnicas de SEO e na proteção 
+            de informações para quem acessa o seu site. 
+        </p>
+        <br>
+        <h2>O que é o https e para que serve? Quais os significados das siglas?</h2>
+        <br>
+        <p>
+            A sigla HTTP significa HyperText Transfer Protocol, que nada mais é que um protocolo 
+            que permite que o computador troque informações com o servidor que abriga o site. Isso 
+            quer dizer que quando são conectados sob o protocolo, o computador pode receber e enviar qualquer conteúdo de texto.
+            <br>
+            <br>
+            O maior problema com o HTTP é que algumas conexões, como é o caso do Wi-Fi, são propícias 
+            para que uma pessoa mal-intencionada, como um hacker, acesse o conteúdo e intercepte os 
+            dados recebidos, deixando então a conexão HTTP insegura para o usuário.
+            <br>
+            <br>
+            E é aí que entra o HTTPS, que significa Hyper Text Transfer Protocol Secure, e que faz 
+            uma total diferença! Esse simples 'S' pode criar uma camada de proteção para quem está 
+            acessando o seu site.
+            <br>
+            <br>
+            Explicando melhor: quando uma conexão é HTTPS, quer dizer que ela possui uma criptografia 
+            específica que impede que os dados sejam interceptados, aumentando assim a segurança da navegação. 
+            É como se existisse uma linguagem que só o servidor e o cliente soubessem, dificultando as ações de 
+            hackers nas informações.
+            <br>
+            <br>
+            Além disso, a conexão segura identifica as páginas da internet por meio de um Certificado SSL, 
+            o que facilita o seu reconhecimento. Continue lendo o artigo para saber mais sobre o que é este 
+            certificado.
+            <br>
+            <br>
+        </p>
+        <h2>O que é Certificado SSL?</h2>
+        <br>
+        <p>
+            De forma mais específica, um site precisa ter um Certificado de segurança SSL (Secure Socket Layer) para validar o HTTPS da página. Ele é emitido por uma Autoridade de Certificação (Certification Authority), que verifica se o endereço web pertence realmente à sua organização ou proprietário. E este Certificado que criptografa todas as informações trocadas dentro da página, gerando segurança e privacidade para o usuário.
+            <br>
+            <br>
+            É por isso que, quando um site NÃO TEM o protocolo HTTPS, é exibido um ponto de exclamação antes do 
+            endereço, na qual o navegador informa ao usuário que a navegação não é segura.
+            <br>
+            <br>
+            Do contrário, quanto o site possui o protocolo HTTPS, um cadeado é exibido antes do “www”, 
+            indicando que a navegação é segura e que o site possui um certificado válido que atesta a 
+            segurança do usuário dentro dele.
+            <br>
+            <br>
+            Portanto, o primeiro passo para migrar seu site para o HTTPS e torná-lo seguro, é obter um 
+            Certificado SSL. Geralmente, os próprios servidores de hospedagem dão a opção para você 
+            comprar um certificado.
+            <br>
+            <br>
+            Alguns deles até oferecem o protocolo HTTPS como cortesia, enquanto alguns outros serviços 
+            já oferecem um certificado gratuitamente. Por isso, vale a pena reservar um tempo para 
+            fazer uma pesquisa de fornecedor para obter o seu certificado.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div id="ftp">
+        <h1>FTP</h1>
+        <br>
+        <p>
+            FTP é a sigla para File Transfer Protocol, um termo que, traduzido para o português, significa 
+            Protocolo de Transferência de Arquivos.
+            <br>
+            <br>
+            Ele é basicamente um tipo de conexão que permite a troca de arquivos entre dois computadores 
+            conectados à internet.
+            <br>
+            <br>
+            Com isso, você pode enviar qualquer coisa para uma outra máquina ou armazená-los em um servidor FTP, 
+            ficando ela sempre disponível para o usuário acessar. 
+            <br>
+            <br>
+            Este artigo vai fazer um panorama geral sobre a tecnologia FTP e mostrar como ela funciona. 
+            É uma forma de você entender que ela pode ser bastante útil no seu dia a dia. Além de também dar  
+            dicas de softwares para facilitar qualquer tarefa que você for realizar.
+            <br>
+            <br>
+        </p>
+        <h2>Como surgiu o FTP?</h2>
+        <br>
+        <p>
+            A origem do FTP data da década de 1970, num momento evolução dos computadores em que as primeiras 
+            redes e ligações entre as máquinas existentes estavam ainda engatinhando, mas crescendo gradativamente. 
+            <br>
+            <br>
+            A tecnologia foi desenvolvida por Abhay Bhushan, na época, um estudante de engenharia elétrica 
+            no MIT (Massachussets Institute of Technology), um dos centros de ensinos acadêmicos mais 
+            conceituados do mundo.
+            <br>
+            <br>
+            O FTP apareceu inicialmente com a proposta de criar um fluxo de transferência segura de arquivos 
+            entre os computadores e os servidores da ARPANET Network Control Program, uma espécie de modelo 
+            precursor e bem arcaico da internet como conhecemos hoje.
+            <br>
+            <br>
+            Ao longo dos anos, o FTP continuou sendo aprimorado com inúmeras revisões e melhorias nos códigos 
+            de programação, sobretudo com a chegada dos computadores domésticos.
+            <br>
+            <br>
+            Com a demanda dos usuários por recursos focados em armazenamento e troca de arquivos pela internet, 
+            não demorou para que o FTP se consolidasse com um dos métodos mais eficientes e populares de 
+            compartilhamento de conteúdos pela rede.
+            <br>
+            <br>
+        </p>
+        <h2>Para que serve o FTP?</h2>
+        <br>
+        <p>
+            Imagine que você faça parte de uma grande agência especializada em produção de vídeos. 
+            Ou tenha que criar um site de negócios com funcionalidades complexas e recursos de programação 
+            que ocupam muitas páginas de um script de linguagem.
+            <br>
+            <br>
+            Por mais que seu computador tenha espaço em disco suficiente para armazenar tudo, é sempre 
+            recomendado usar algum recurso que divida o peso dos conteúdos e que eles estejam facilmente 
+            acessíveis para quando alguém quiser usá-los.
+            <br>
+            <br>
+            E como geralmente várias pessoas trabalham em um projeto ao mesmo tempo, é comum também querer 
+            dividir as tarefas e compartilhar os conteúdos criados para que o andamento das atividades 
+            seja dinâmico e eficiente.  
+            <br>
+            <br>
+            O FTP serve exatamente para fazer a ponte de comunicação entre essas pessoas através dos seus 
+            computadores conectados à internet. Eles se comunicam através de um servidor online, que é o 
+            local onde essas informações ficam hospedadas e armazenadas.
+            <br>
+            <br>
+            E, como curiosidade: sabia que o protocolo FTP é usado em algumas das atividades mais simples 
+            na internet? O simples ato de você acessar um site, por exemplo, requer que seu computador 
+            peça ao servidor onde ele está hospedado para que faça o download dos dados daquela página.
+            <br>
+            <br>
+            É assim que você consegue visualizar todo o conteúdo disponibilizado nela. Antes disso, claro,  
+            alguém já havia anteriormente enviado essas informações para o servidor através do FTP, 
+            possibilitando o seu acesso e de qualquer outro usuário interessado.
+            <br>
+            <br>
+        </p>
+        <h2>Como funciona o FTP?</h2>
+        <br>
+        <p>
+            No processo de transferência e recebimento de arquivos pela internet, o FTP funciona em 
+            torno de dois protagonistas: o cliente e o servidor.
+            <br>
+            <br>
+            O cliente é o computador que solicita a conexão para ter acesso aos dados já hospedados na 
+            internet. Já o servidor é um outro computador que atua como um ambiente virtual, recebendo 
+            a solicitação do cliente para a transferência dos arquivos nele hospedados.
+            <br>
+            <br>
+            O computador que atua como cliente consegue acesso aos arquivos hospedados na internet 
+            através de um programa que se conecta ao computador que atua como servidor. É ele quem 
+            também faz a transferência dos arquivos do computador para o servidor.
+            <br>
+            <br>
+            Já o computador que atua como servidor geralmente possui programas disponíveis para 
+            permitir a conexão de computadores externos a ele. Ele simplesmente autoriza a transferência 
+            dos arquivos armazenados nele para o cliente que está solicitando o acesso.  
+            <br>
+            <br>
+            Essa é a dinâmica de comunicação entre usuários de computadores que querem compartilhar dados, 
+            informações ou conteúdos entre si, seja para fins pessoais ou profissionais.
+            <br>
+            <br>
+            Essa operação precisa ser segura. Por isso, ela sempre pede alguma autenticação para proteger 
+            as transferências de dados. Ou seja, é obrigatório ter um login e uma senha de acesso para 
+            transferir arquivos pelo FTP.
+            <br>
+            <br>
+        </p>
+<h2>
+    O que é um servidor FTP?
+</h2>
+<br>
+<p>
+    Neste artigo já usamos os termos “FTP”, “cliente” e “servidor”. E você já sabe o que cada um deles significa, para que servem e como interagem entre si. Chegou a hora de conhecer mais um termo: o próprio “servidor FTP”.
+    <br>
+    <br>
+Um servidor FTP é o servidor que oferece um serviço de acesso a um disco rígido ou servidor de arquivos criados através de um protocolo FTP. É ele que armazena as informações ou dados enviados por um usuário e que estarão acessíveis por qualquer membro da internet.
+<br>
+<br>
+Conseguiu sacar a diferença entre FTP e servidor FTP? Basicamente, o primeiro é um tipo de protocolo de transporte e entrega de arquivos. O segundo é um ambiente virtual gerenciável por um software instalado em qualquer computador.    
+<br>
+<br>
+Servidores FTP são muito usados quando se trabalha com grandes volumes de dados compartilhados pela rede. E eles são bastante úteis para gerenciar essas informações entre diversos clientes que solicitam o acesso a eles.
+<br>
+<br>
+</p>
+    </div>
+    <div id="dns">
+        <h1>DNS</h1>
+        <br>
+        <p>
+            Apesar de um conceito amplamente difundido, pode ser que você não saiba tanto sobre ele e queira entender melhor o que é DNS. Pensando nisso, separamos essas e outras informações para você. Confira nas linhas abaixo!
+            <br>
+<br>
+        </p>
+<h2>
+    O que é DNS
+</h2>
+<br>
+<p>
+    Os servidores DNS (Domain Name System, ou Sistema de Nomes de Domínios) são os responsáveis por localizar e traduzir para números IP (Internet Protocol) os endereços dos sites que digitamos nos navegadores — como www.canaltech.com.br, por exemplo.
+    <br>
+    <br>
+    Imagine ter que acessar seus sites preferidos através de números de IP, memorizando sequências de números para cada um deles? Isso seria algo completamente inviável, já que seria quase o mesmo que tentar memorizar todos os números de telefone da sua lista telefônica.
+    <br>
+    <br>
+Para isso existem os registros de domínios e os servidores de DNS espalhados pelo mundo com a simples função de traduzir o que é digitado na barra de endereços. Assim, ele é capaz de entender que a URL específica só vai acessar um único endereço IP através dos bancos de dados.
+<br>
+<br>
+</p>
+<h2>
+    Como funciona o DNS
+</h2>
+<br>
+<p>
+    Os servidores DNS são capazes de converter as solicitações da URL em endereços de IP. Mais especificamente, eles controlam quais servidores os usuários podem acessar ao digitar um nome de domínio no browser.
+    <br>
+    <br>
+    Nesse momento, é importante entender que cada domínio possui um único endereço de IP e que também não há a possibilidade de sites diferentes possuírem a mesma URL. No entanto, diferentes URLs podem jogar os usuários para o mesmo site — desde que sejam do mesmo proprietário.
+<br>
+<br>
+Embora todas essas requisições sejam feitas em frações de segundos, não são raras as vezes em que ocorrem gargalos e lentidão na conversão. A solução é criar uma espécie de Cache DNS, que, assim como a memória cache que estamos habituados, armazena consultas recentes para não ter que ficar repetindo o processo todas as vezes para acessar endereços já conhecidos.
+<br>
+<br>
+</p>
+    </div>
+    <div id="dhcp">
+        <h1>DHCP</h1>
+        <br>
+        <p>
+            Quando falamos em redes, existem alguns recursos que são utilizados e facilitam muito a nossa vida, mas nem os percebemos. Um deles é o protocolo DHCP. Do inglês Dynamic Host Configuration Protocol (que ficaria, em português, algo como Protocolo de Configuração Dinâmica de Endereços de Rede), é um protocolo utilizado em redes de computadores que permite às máquinas obterem um endereço IP automaticamente.
+<br>
+<br>
+Este protocolo começou a ganhar terreno aproximadamente em Outubro de 1993, sendo o sucessor do BOOTP que, embora seja mais simples, tornou-se muito limitado para as exigências atuais.
+<br>
+<br>
+        </p>
+        <h2>
+            Por que ele é importante?
+        </h2>
+        <br>
+        <p>
+            Digamos que você seja o administrador de uma rede. Se fosse uma rede doméstica com 3 computadores, não seria trabalhoso atribuir um número de IP e todos os parâmetros necessários para cada um deles. Agora, se fossem 100, 200 ou mais, certamente a história seria outra.
+<br>
+<br>
+O protocolo DHCP faz exatamente isto, por meio dele um servidor é capaz de distribuir automaticamente endereços de IP diferentes a todos os computadores à medida que eles fazem a solicitação de conexão com a rede. Essa distribuição dos IPs é feita em um intervalo pré-definido configurado no servidor. Sempre que uma das máquinas for desconectada o IP ficará livre para o uso em outra.
+<br>
+<br>
+O DHCP é o responsável pelo endereço de IP das máquinas
+<br>
+<br>
+Você já deve ter ouvido que recebe um endereço de IP diferente para cada conexão de internet, certo? Este é um fato cujo responsável é o DHCP combinado com protocolos diferentes.
+<br>
+<br>
+        </p>
+        <h2>
+            Como ele faz isso?
+        </h2>
+        <br>
+        <p>
+            Resumidamente, utilizando um modelo cliente-servidor, o DHCP faz o seguinte:
+<br>
+<br>
+● Quando um cliente conecta-se a uma rede ele envia um pacote com um pedido de configurações DHCP.
+<br>
+<br>
+●  O servidor DHCP gerencia uma faixa fixa de IPs disponíveis juntamente com as informações e 
+   parâmetros necessários (gateway padrão, nome de domínio, DNS, etc).
+<br>
+<br>
+●  Quando este servidor recebe um pedido, ele entrega um destes endereços e configurações para o cliente.
+<br>
+<br>
+        </p>
+    </div>
+    <div id="ssh">
+        <h1>SSH</h1>
+        <br>
+<p>
+    O objetivo do SSH é permitir que desenvolvedores ou outros usuários realizem alterações em sites e servidores utilizando uma conexão simples e segura
+    <br>
+    <br>
+    SSH é a sigla para Secure Socket Shell, sendo um dos protocolos específicos de segurança de troca de arquivos entre cliente e servidor de internet, usando criptografia. O objetivo do SSH é permitir que desenvolvedores ou ou
+    <br>
+    <br>
+</p>
+<h2>
+    O que é o protocolo SSH?
+</h2>
+<br>
+<p>
+    Para compreender melhor o que é esse protocolo, é importante saber que ele é a sigla para o termo Secure Socket Shell. Em tradução livre, significa “Concha de Segurança”, mas pode ser adaptado para o termo “Bloqueio de Segurança”. 
+<br>
+<br>
+Basicamente, o SSH consiste em um dos protocolos específicos de segurança de troca de arquivos entre cliente e servidor. Por essa razão, quando o assunto é segurança em seu projeto na internet, esse protocolo ganha bastante relevância.
+<br>
+<br>
+O processo de transferir dados é parte integrante das tarefas comuns na era digital e é essencial garantir que ele seja seguro. Por isso, esse tipo de protocolo é fundamental em um site, seja para empresas ou residências.
+<br>
+<br>
+O objetivo do SSH é permitir que desenvolvedores ou outros usuários realizem alterações em sites e servidores utilizando uma conexão simples e segura. Com isso, por meio de um dispositivo conectado à internet, o desenvolvedor pode configurar e alterar arquivos de uma página da web.
+<br>
+<br>
+De uma forma geral, esse protocolo cria um método seguro e impede que esses arquivos e de seus códigos sejam expostos ou corrompidos por terceiros. É aí que as criptografias são usadas, permitindo apenas que dois pontos acessem as informações, que são o servidor e o computador que enviou os dados para esse local remoto.
+<br>
+<br>
+</p>
+<h2>
+    Como surgiu e como funciona o protocolo SSH
+</h2>
+<br>
+<p>
+    O SSH é um protocolo surgido em 1995. Ele foi desenvolvido pelo programador Tatu Ylonen, 
+    com o objetivo de solucionar um incidente envolvendo hackers em uma universidade finlandesa.
+<br>
+<br>
+Hoje em dia, o protocolo SSH é utilizado para gerenciar mais da metade dos servidores web 
+no mundo inteiro, com presença em quase todos os computadores que operam com Unix ou Linux. 
+Essa ferramenta faz parte do cotidiano de vários profissionais que atuam na área da programação 
+e no desenvolvimento de sistemas de segurança.
+<br>
+<br>
+O protocolo SSH pode ser utilizado para configurar, gerenciar, monitorar e operar firewalls, 
+roteadores, switches e servidores de redes e ambientes digitais na web.
+<br>
+<br>
+Além disso, funciona por meio de uma chave pública que tem o objetivo de verificar e 
+autenticar a legitimidade do servidor que o usuário pretende acessar (ou vice-versa). 
+O acesso então é realizado com o uso de um login e senha. Esse recurso consegue proteger 
+a conexão.
+<br>
+<br>
+Uma das grandes vantagens é que, por meio do SSH, o usuário tem condições de estabelecer 
+um sistema de proteção para o seu site sem comprometer o desempenho dele. Com isso, o SSH 
+torna a segurança do seu projeto mais eficiente, enquanto também atua na transferência de 
+arquivos.
+<br>
+<br>
+</p>
+    </div>
+    <div id="telnet">
+        <h1>TELNET</h1>
+        <br>
+        <p>
+            O Telnet é um protocolo de rede normalmente usado para agilizar o conserto de 
+            falhas em computadores. Ele possibilita uma conexão remota entre duas máquinas, 
+            facilitando não só a correção de erros, mas também o acesso a programas e dados. 
+            Mas, afinal, o que é Telnet? Abaixo, vou te explicar mais detalhes sobre o termo.
+            <br>
+            <br>
+            O Telnet não é novo. Na verdade, ele foi criado há cerca de 50 anos pelas forças 
+            armadas dos Estados Unidos e, inicialmente, sua função era transmitir dados entre 
+            as bases militares. Hoje, esse protocolo consegue fazer a emulação de um terminal 
+            à distância, permitindo a execução de comandos escritos a partir de um computador 
+            em outro.
+            <br>
+            <br>
+            Uma das características do Telnet é que ele segue o protocolo TCP/IP para criar 
+            sessões remotas. Assim, é possível fazer login como um usuário comum, mas tendo 
+            os privilégios de administrador para iniciar funções em programas, explorar 
+            dados e muito mais.
+            <br>
+            <br>
+        </p>
+        <h2>Como funciona</h2>
+        <br>
+        <p>
+            O Telnet é usado para executar linhas de comando em um computador remoto. 
+            Ele trabalha verificando a disponibilidade de uma porta e, caso esteja aberta, 
+            solicita uma conexão. Como se trata de um protocolo, existe uma série de 
+            procedimentos e regras para padronizar a comunicação.
+            <br>
+            <br>
+            Antes de iniciar qualquer conexão, o usuário deve instalar um software baseado 
+            em Telnet nos dois computadores. Quando for preciso criar um acesso, o programa 
+            vai solicitar um nome de usuário e senha para evitar invasões. No entanto, esses 
+            dados só serão validados caso o usuário tenha configurado anteriormente uma conta 
+            na máquina remota.
+            <br>
+            <br>
+            Assim que a conexão é estabelecida, o computador principal passa a atuar como um 
+            terminal virtual. Dessa forma, os comandos digitados são reconhecidos no outro PC e 
+            podem ser usados para executar uma série de funções, normalmente relacionadas a 
+            otimização de suporte técnico.
+            <br>
+            <br>
+        </p>
+        <h2>Segurança</h2>
+        <br>
+        <p>
+            Apesar da facilidade, o Telnet não é um protocolo seguro, pois carece de um sistema de criptografia. Considerando que os comandos enviados são textos simples, pessoas não autorizados que estiverem monitorando a conexão podem visualizar o nome do usuário, senha e outras informações privadas digitadas na sessão.
+            <br>
+            <br>
+            Por questões de segurança, diversas empresas utilizam protocolos mais robustos, como o SSH, que criptografa todo o tráfego que passa pelo canal de comunicação para manter a integridade dos dados.
+            <br>
+            <br>
+        </p>
+    </div>
+    </div>
+</body>
+</html>
